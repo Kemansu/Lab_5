@@ -13,7 +13,7 @@ public class IdGenerator {
 
     public static void Fuel(){
         ArrayList<Long> list = new ArrayList<>();
-        for (long i = 1; i < ('9' * 64); i++){
+        for (long i = 1; i < Math.pow(2, 25); i++){
             list.add(i);
         }
 
