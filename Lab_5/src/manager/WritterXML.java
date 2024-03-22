@@ -12,6 +12,7 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
+import java.io.PrintWriter;
 import java.util.ArrayDeque;
 
 public class WritterXML {
@@ -54,10 +55,12 @@ public class WritterXML {
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
             transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-            DOMSource source = new DOMSource(doc);
 
-            StreamResult result = new StreamResult(new File(filePath));
-            transformer.transform(source, result);
+            // Используем PrintWriter для записи в файл
+            PrintWriter writer = new PrintWriter(new File(filePath));
+            StreamResult result = new StreamResult(writer);
+            transformer.transform(new DOMSource(doc), result);
+            writer.close();
 
             System.out.println("Файл успешно сохранен!");
 
