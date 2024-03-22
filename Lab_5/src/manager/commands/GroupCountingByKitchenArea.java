@@ -32,12 +32,12 @@ public class GroupCountingByKitchenArea implements Command{
         for (int i = 0; i < arrayList.size() - 1; i++) {
             if (arrayList.get(i).getKitchenArea().equals(arrayList.get(i + 1).getKitchenArea())){
                 counter++;
-                if (arrayList.get(i + 1) == arrayList.getLast()) {
+                if (arrayList.get(i + 1) == arrayList.get(arrayList.size() - 1)) {
                     counts.put(String.valueOf(arrayList.get(i).getKitchenArea()), counter);
                 }
             } else {
                 counts.put(String.valueOf(arrayList.get(i).getKitchenArea()), counter);
-                if (arrayList.get(i + 1) == arrayList.getLast()) {
+                if (arrayList.get(i + 1) == arrayList.get(arrayList.size() - 1)) {
                     counts.put(String.valueOf(arrayList.get(i + 1).getKitchenArea()), 1);
                 }
                 counter = 1;
