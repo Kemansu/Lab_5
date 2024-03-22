@@ -11,17 +11,25 @@ import org.xml.sax.SAXException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.StringReader;
+import java.io.*;
 import java.time.LocalDate;
+import java.util.Scanner;
 
 public class ReaderXML {
 
     public static void read() throws ParserConfigurationException, IOException, SAXException {
         String filePath = System.getenv("MY_TEXT_FILE");
-        InputSource in = new InputSource(new BufferedReader(new FileReader(filePath)));
+        StringBuilder xmlContent = new StringBuilder();
+        try (Scanner scanner = new Scanner(new File(filePath))) {
+            while (scanner.hasNextLine()) {
+                xmlContent.append(scanner.nextLine()).append("\n");
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found: " + filePath);
+            return;
+        }
+
+        InputSource in = new InputSource(new StringReader(xmlContent.toString()));
         try {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
