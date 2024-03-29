@@ -1,6 +1,7 @@
 package data.generators;
 
 import data.House;
+import exceptions.WrongInputException;
 
 import java.util.Scanner;
 
@@ -15,6 +16,9 @@ public class HouseGenerator {
             System.out.println("Input name of House (String):");
             try {
                 input = scanner.nextLine();
+                if (input.isEmpty() | input.equals(null)) {
+                    throw new WrongInputException();
+                }
                 house.setName(input);
                 break;
             } catch (Exception e){
@@ -27,6 +31,9 @@ public class HouseGenerator {
             System.out.println("Input year of House (Long):");
             try {
                 input = scanner.nextLine();
+                if (Long.parseLong(input) <= 0) {
+                    throw new WrongInputException();
+                }
                 house.setYear(Long.valueOf(input));
                 break;
             } catch (Exception e){
@@ -38,6 +45,9 @@ public class HouseGenerator {
             System.out.println("Input number Of Flats On Floor (Integer):");
             try {
                 input = scanner.nextLine();
+                if (Integer.valueOf(input) <= 0) {
+                    throw new WrongInputException();
+                }
                 house.setNumberOfFlatsOnFloor(Integer.valueOf(input));
                 break;
             } catch (Exception e){

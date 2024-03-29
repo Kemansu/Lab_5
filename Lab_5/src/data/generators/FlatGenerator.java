@@ -22,11 +22,10 @@ public class FlatGenerator {
             System.out.println("Input name (String):");
             try {
                 input = String.valueOf(scanner.nextLine());
-                if (input.isEmpty()) {
+                if (input.isEmpty() | input.equals(null)) {
                     throw new WrongInputException();
-                } else {
-                    flat.setName(input);
                 }
+                flat.setName(input);
                 break;
             } catch (Exception e){
                 System.out.println("Wrong input: " + scanner.nextLine());
@@ -79,6 +78,9 @@ public class FlatGenerator {
             System.out.println("Input number Of Rooms (long):");
             try {
                 input = scanner.nextLine();
+                if (Long.parseLong(input) <= 0) {
+                    throw new WrongInputException();
+                }
                 flat.setNumberOfRooms(Long.parseLong(input));
                 break;
             } catch (Exception e){
@@ -91,6 +93,9 @@ public class FlatGenerator {
             System.out.println("Input kitchen Area (Double):");
             try {
                 input = scanner.nextLine();
+                if (Long.parseLong(input) <= 0) {
+                    throw new WrongInputException();
+                }
                 flat.setKitchenArea(Double.valueOf(input));
                 break;
             } catch (Exception e){

@@ -5,7 +5,6 @@ import manager.CollectionManager;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Queue;
 
 public class IdGenerator {
@@ -13,7 +12,7 @@ public class IdGenerator {
 
     public static void Fuel(){
         ArrayList<Long> list = new ArrayList<>();
-        for (long i = 1; i < Math.pow(2, 25); i++){
+        for (long i = 1; i < Math.pow(2, 10); i++){
             list.add(i);
         }
 
