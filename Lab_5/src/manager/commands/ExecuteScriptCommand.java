@@ -247,8 +247,7 @@ public class ExecuteScriptCommand implements Command{
                     System.out.println("Collection was successfully changed!\nFlats deleted - " + k);
                 } else if (command.equals("execute_script_command " + filePath)) {
                     throw new WrongInputException();
-                }
-                if (CommandManager.getCommandList().containsKey(command)) {
+                } else if (CommandManager.getCommandList().containsKey(command)) {
                     CommandManager.startExecuting(command);
                 }
             }
