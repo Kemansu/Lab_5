@@ -10,11 +10,11 @@ public class SaveCommand implements Command{
 
     @Override
     public String getName() {
-        return null;
+        return "save";
     }
 
     @Override
     public String getDescription() {
-        return null;
+        return "сохранить коллекцию в файл";
     }
 }

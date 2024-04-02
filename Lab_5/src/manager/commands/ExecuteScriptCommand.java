@@ -22,7 +22,6 @@ public class ExecuteScriptCommand implements Command{
         try {
             while (scanner.hasNextLine()) {
                 String command = scanner.nextLine();
-                System.out.println(command);
 
                 if (command.equals("add")) {
                     String name = scanner.nextLine();
