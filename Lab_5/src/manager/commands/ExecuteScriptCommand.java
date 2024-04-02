@@ -5,6 +5,7 @@ import data.*;
 import data.comparators.FlatsComparator;
 import data.generators.FlatGenerator;
 import data.generators.IdGenerator;
+import exceptions.WrongInputException;
 import manager.CollectionManager;
 import manager.CommandManager;
 
@@ -244,6 +245,8 @@ public class ExecuteScriptCommand implements Command{
 
                     CollectionManager.setArrayDeque(arrayDeque_new);
                     System.out.println("Collection was successfully changed!\nFlats deleted - " + k);
+                } else if (command.equals("execute_script_command " + filePath)) {
+                    throw new WrongInputException();
                 }
                 if (CommandManager.getCommandList().containsKey(command)) {
                     CommandManager.startExecuting(command);
