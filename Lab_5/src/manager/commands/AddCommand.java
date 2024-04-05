@@ -6,7 +6,12 @@ import data.generators.IdGenerator;
 import manager.CollectionManager;
 import manager.CommandManager;
 import manager.WritterXML;
-
+/**
+ * Данная команда добавляет новый элемент в коллекцию
+ *
+ * @author Kemansu
+ * @since 1.0
+ */
 public class AddCommand implements Command{
     @Override
     public void execute(String[] args) throws Exception {

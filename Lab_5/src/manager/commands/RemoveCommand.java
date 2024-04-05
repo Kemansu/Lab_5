@@ -8,6 +8,12 @@ import manager.CollectionManager;
 import java.util.ArrayDeque;
 import java.util.LinkedList;
 
+/**
+ *  Данная команда удаляет из коллекции элемент, по заданному id
+ *
+ * @author Kemansu
+ * @since 1.0
+ */
 public class RemoveCommand implements Command{
     @Override
     public void execute(String[] args) {

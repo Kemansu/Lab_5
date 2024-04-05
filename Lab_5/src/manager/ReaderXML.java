@@ -15,6 +15,12 @@ import java.io.*;
 import java.time.LocalDate;
 import java.util.Scanner;
 
+/**
+ * Данный класс выполняет чтение данных, которые хранятся в формате XML
+ *
+ * @author Kemansu
+ * @since 1.0
+ */
 public class ReaderXML {
 
     public static void read() throws ParserConfigurationException, IOException, SAXException {

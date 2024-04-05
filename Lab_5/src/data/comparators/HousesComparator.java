@@ -3,7 +3,12 @@ package data.comparators;
 import data.House;
 
 import java.util.Comparator;
-
+/**
+ * Данный comparator сравнивает дома между собой
+ *
+ * @author Kemansu
+ * @since 1.0
+ */
 public class HousesComparator implements Comparator<House> {
 
     @Override

@@ -5,6 +5,13 @@ import manager.commands.*;
 
 import java.util.LinkedHashMap;
 
+/**
+ *  Данный класс обеспечивает связь между командами и CollectionManager
+ *
+ * @author Kemansu
+ * @since 1.0
+ */
+
 public class CommandManager {
     private static LinkedHashMap<String, Command> commandList;
 

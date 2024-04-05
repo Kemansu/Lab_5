@@ -15,6 +15,13 @@ import java.io.File;
 import java.io.PrintWriter;
 import java.util.ArrayDeque;
 
+/**
+ * Данный класс выполняет запись данных, которые хранятся в формате XML
+ *
+ * @author Kemansu
+ * @since 1.0
+ */
+
 public class WritterXML {
 
     public static void write() {

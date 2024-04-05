@@ -6,6 +6,13 @@ import data.generators.FlatGenerator;
 import manager.CollectionManager;
 
 import java.util.ArrayDeque;
+/**
+ *  Данная команда удаляет из коллекции все элементы, меньшие, чем заданный
+ *
+ *
+ * @author Kemansu
+ * @since 1.0
+ */
 
 public class RemoveLowerCommand implements Command{
     @Override

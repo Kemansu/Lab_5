@@ -1,5 +1,11 @@
 package data;
-
+/**
+ * модель объекта "дом"
+ * содержит геттеры/сеттеры
+ *
+ * @author Kemansu
+ * @since 1.0
+ */
 public class House {
     private String name; //Поле может быть null
     private Long year; //Значение поля должно быть больше 0

@@ -6,7 +6,12 @@ import manager.CollectionManager;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Queue;
-
+/**
+ * Данный класс отвечает за генерацию id для обхектов коллекции
+ *
+ * @author Kemansu
+ * @since 1.0
+ */
 public class IdGenerator {
     public static Queue<Long> IdArray = new ArrayDeque<>();
 

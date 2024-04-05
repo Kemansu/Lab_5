@@ -1,6 +1,5 @@
 package manager.commands;
 
-
 import data.*;
 import data.comparators.FlatsComparator;
 import data.generators.FlatGenerator;
@@ -13,7 +12,12 @@ import java.io.FileReader;
 import java.util.ArrayDeque;
 import java.util.List;
 import java.util.Scanner;
-
+/**
+ *  Данная команда исполняет скрипт из файла
+ *
+ * @author Kemansu
+ * @since 1.0
+ */
 public class ExecuteScriptCommand implements Command{
     @Override
     public void execute(String[] args) throws Exception {

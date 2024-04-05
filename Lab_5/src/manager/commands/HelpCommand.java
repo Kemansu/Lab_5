@@ -3,7 +3,12 @@ package manager.commands;
 import manager.CommandManager;
 
 import java.util.LinkedHashMap;
-
+/**
+ *  Данная команда выводит информацию про команды, которые можно использовать в консольномо приложении
+ *
+ * @author Kemansu
+ * @since 1.0
+ */
 public class HelpCommand implements Command{
     @Override
     public void execute(String[] args) throws Exception {

@@ -2,7 +2,12 @@ package manager.commands;
 
 import manager.CollectionManager;
 import manager.WritterXML;
-
+/**
+ *  Данная команда очищает коллекцию
+ *
+ * @author Kemansu
+ * @since 1.0
+ */
 public class ClearCommand implements Command{
     @Override
     public void execute(String[] args) throws Exception {

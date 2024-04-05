@@ -8,7 +8,12 @@ import manager.CollectionManager;
 
 import java.util.ArrayDeque;
 import java.util.Comparator;
-
+/**
+ *  Данная команда групирует элементы коллекции по значению поля kitchenArea, выводит количество элементов в каждой группе
+ *
+ * @author Kemansu
+ * @since 1.0
+ */
 public class GreaterThanHouse implements Command{
     @Override
     public void execute(String[] args) throws Exception {

@@ -5,7 +5,12 @@ import data.comparators.FlatsKitchenComparator;
 import manager.CollectionManager;
 
 import java.util.*;
-
+/**
+ *  Данная команда сгрупировывает элементы коллекции по значению поля kitchenArea, выводит количество элементов в каждой группе
+ *
+ * @author Kemansu
+ * @since 1.0
+ */
 
 public class GroupCountingByKitchenArea implements Command{
     @Override

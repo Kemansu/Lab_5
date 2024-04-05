@@ -3,7 +3,12 @@ package data.comparators;
 import data.Flat;
 
 import java.util.Comparator;
-
+/**
+ * Данный comparator объекты типа Flat дома между собой
+ *
+ * @author Kemansu
+ * @since 1.0
+ */
 public class FlatsComparator implements Comparator<Flat> {
     @Override
     public int compare(Flat flat1, Flat flat2) {

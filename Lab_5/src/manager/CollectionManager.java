@@ -4,7 +4,13 @@ import data.Flat;
 
 import java.time.LocalDate;
 import java.util.ArrayDeque;
-
+/**
+ *  Данный класс отвечает за взаимодействие с коллекцией
+ *  Содержит коллекцию команд
+ *
+ * @author Kemansu
+ * @since 1.0
+ */
 public class CollectionManager {
     private static ArrayDeque<Flat> arrayDeque;
 

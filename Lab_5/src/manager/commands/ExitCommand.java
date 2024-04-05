@@ -1,5 +1,10 @@
 package manager.commands;
-
+/**
+ *  Данная команда заканчивает работу консольного приложения
+ *
+ * @author Kemansu
+ * @since 1.0
+ */
 public class ExitCommand implements Command{
     @Override
     public void execute(String[] args) throws Exception {

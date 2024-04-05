@@ -4,7 +4,12 @@ import data.House;
 import exceptions.WrongInputException;
 
 import java.util.Scanner;
-
+/**
+ * Данный класс отвечает за генерацию объектов типа House
+ *
+ * @author Kemansu
+ * @since 1.0
+ */
 public class HouseGenerator {
     public static House createHouse(){
         String input = null;

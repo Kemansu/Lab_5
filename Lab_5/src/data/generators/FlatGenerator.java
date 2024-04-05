@@ -6,7 +6,12 @@ import exceptions.WrongInputException;
 
 
 import java.util.Scanner;
-
+/**
+ * Данный класс отвечает за генерацию объектов типа Flat
+ *
+ * @author Kemansu
+ * @since 1.0
+ */
 public class FlatGenerator {
     public static Flat createFlat(Long id) throws WrongInputException {
 

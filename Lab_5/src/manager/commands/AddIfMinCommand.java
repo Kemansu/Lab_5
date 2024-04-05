@@ -9,7 +9,12 @@ import manager.CollectionManager;
 import java.util.ArrayDeque;
 import java.util.Collections;
 import java.util.List;
-
+/**
+ * Данная команда добавляет новый элемент в коллекцию, если его значение меньше, чем у наименьшего элемента этой коллекции
+ *
+ * @author Kemansu
+ * @since 1.0
+ */
 public class AddIfMinCommand implements Command{
     @Override
     public void execute(String[] args) throws Exception {

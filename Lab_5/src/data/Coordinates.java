@@ -1,5 +1,10 @@
 package data;
-
+/**
+ * Модель объекта "координаты"
+ * содержит геттеры/сеттеры
+ * @author Kemansu
+ * @since 1.0
+ */
 public class Coordinates {
     private Double x; //Значение поля должно быть больше -772, Поле не может быть null
     private long y; //Максимальное значение поля: 793

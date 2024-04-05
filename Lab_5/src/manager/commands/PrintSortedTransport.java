@@ -10,6 +10,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ *  Данная команда выводит значения поля transport всех элементвов в порядке возрастания
+ *
+ * @author Kemansu
+ * @since 1.0
+ */
 public class PrintSortedTransport implements Command{
     @Override
     public void execute(String[] args) throws Exception {

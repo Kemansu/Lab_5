@@ -1,7 +1,12 @@
 package manager.commands;
 
 import manager.CollectionManager;
-
+/**
+ *  Данная команда выводит различную информацию про коллекцию и ее содержимое
+ *
+ * @author Kemansu
+ * @since 1.0
+ */
 public class InfoCommand implements Command{
     @Override
     public void execute(String[] args) throws Exception {

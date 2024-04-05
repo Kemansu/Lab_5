@@ -1,7 +1,12 @@
 package manager.commands;
 
 import manager.WritterXML;
-
+/**
+ *  Данная команда сохраняет коллекицю в файл, в формате xml
+ *
+ * @author Kemansu
+ * @since 1.0
+ */
 public class SaveCommand implements Command{
     @Override
     public void execute(String[] args) throws Exception {
