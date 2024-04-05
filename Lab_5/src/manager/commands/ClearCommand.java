@@ -7,7 +7,6 @@ public class ClearCommand implements Command{
     @Override
     public void execute(String[] args) throws Exception {
         CollectionManager.clear();
-        WritterXML.write();
         System.out.println("Collection successfully cleared!");
     }
 
